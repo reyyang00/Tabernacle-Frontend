@@ -1,8 +1,60 @@
+nav,header,footer{
+    display: block;
+}
 h1 {
-    color: white;
+    color: black;
 }
 body{
     background-image: url(pictures/fog-foggy-forest-4827.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    line-height: 1;
+    margin: 0;
+}
+nav{
+    width: 100%;
+    margin: 0;
+}
+nav ul {
+    background-color:  #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnva li{
+    list-style: none;
+    float: left;
+}
+ul.topnva li.topnav-right{
+    list-style: none;
+    float: right;
+}
+ul.topnva li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666; 
+}
+ul.topnva li a:hover{
+    background-color: blue;
+    color: #fff;
+}
+ul.topnva li.dropdownIcon{
+    display: none;
+}
+
+
+/*##################Mobile ############*/
+@media screen and (max-width: 680px) {
+    ul.topnva li:not(:nth-child(1)){
+        display: none;
+    }
+    
+    ul.topnva li.dropdownIcon{
+        display: block;
+    }
+    
 }
